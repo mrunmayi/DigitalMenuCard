@@ -8,16 +8,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<form name="Homepg">
-<br><br><br><br><br><br> <center>
-<input type="button" name="Menu" value="Check Menu" onclick="method())"> &nbsp;&nbsp;
-<input type="button" name="Oder" value="Place order"> &nbsp;&nbsp;
-<input type="button" name="Bill" value="Give Bill">
-</center>
 <% String name = request.getParameter("username");
 //out.println(name);
 %> 
+<br><br><br><br>
+<center>Welcome <% out.println(name);
+%></center>
+<center>Your Table number is 5 <% 
+%></center>
+
+<form name="Homepg" action="Homw" method="get">
+<br><br><br><br> <center>
+<input type="button" name="water" value="Bring water"> &nbsp;&nbsp;
+<input type="button" name="Menu" value="Check Menu" onclick="method())"> &nbsp;&nbsp;
+<input type="button" name="Oder" value="Place order"> &nbsp;&nbsp;
+<input type="button" name="Bill" value="Give Bill"> 
+</center>
+
 </form>
 </body>
 </html>

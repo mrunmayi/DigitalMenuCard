@@ -50,7 +50,23 @@ public class Homw extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
+		String water= request.getParameter("Bring_water");
+		String menu= request.getParameter("Check_Menu");
+		String Order= request.getParameter("Place_order");
+		String Bill= request.getParameter("Give_Bill");
+		
+		if(water != null){
+			    RequestDispatcher rd = request.getRequestDispatcher("Homw");
+			    rd.forward(request,response);
+		}else if(Bill != null){
+			
+		}else if(Order != null){
+			
+		}else{
+			
+		}
+			
 	}
 
 }
